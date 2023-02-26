@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестирующая система</title>
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script defer src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="root">
+        <header class="header">
+            <div class="header-appname">
+                HScokies's C# Test
+            </div>
+            <div class="header__data">
+                <div class="header__data-address">
+                    St. George aps.5
+                </div>
+                <div class="header__data-phone">
+                    1-857-239-7601
+                </div>
+            </div>
+        </header>
+        <div class="body">
+            <div class="body__startscr" onclick="Start(this)">
+                Начать тест
+            </div>
+            <div class="body__wrapper" id="main">
+                <div class="body__wrapper__indexContainer">
+                    Вопрос 1 / 10
+                </div>
+                <div class="body__wrapper__activeArea">
+                    <div class="body__wrapper__activeArea-question">
+                        
+                    </div>
+                    <div class="body__wrapper__activeArea-answer">
+                        
+                    </div>
+                </div>
+                <div class="body__wrapper__controlsContainer">
+                    <div class="body__wrapper__controlsContainer-prev inactive" onclick="HandleControls(this, false)"></div>
+                    <div class="body__wrapper__controlsContainer-next" onclick="HandleControls(this, true)"></div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            HScokies aka Глеб Галерт
+        </footer>
+    </div>
+</body>
+
+</html>
