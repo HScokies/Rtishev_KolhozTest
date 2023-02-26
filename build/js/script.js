@@ -302,7 +302,7 @@ const HandleQuestion8 = () => {
     }
 };
 const ShowQuestion9 = () => {
-    Q.innerHTML = "Отсортируйте введенные через пробел элементы с четным значением";
+    Q.innerHTML = "Отсортируйте введенные через пробел элементы с нечетным значением";
     A.innerHTML = "<textarea class=\"input\"  spellcheck=\"false\" onkeydown=\"textareaHandler(event, this)\" ></textarea> ";
     const _input = document.querySelector(".input");
     if (Saved[8] != null) {
