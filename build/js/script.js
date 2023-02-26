@@ -376,9 +376,9 @@ const ShowResults = () => {
     let h1 = document.createElement("h1");
     h1.textContent = "Результаты";
     let best = document.createElement("p");
-    best.textContent = `Лучший ${topScore}/20`;
+    best.textContent = `Лучший ${topScore}/10`;
     let curr = document.createElement("p");
-    curr.textContent = `Текущий ${score}/20`;
+    curr.textContent = `Текущий ${score}/10`;
     let btn = document.createElement("p");
     btn.textContent = "Начать заново";
     btn.classList.add("body__resultscr-restart");
